@@ -1,0 +1,220 @@
+/* ============================================
+   DARK PREMIUM STYLE – vFinal
+   ChatGPT Custom Design
+=============================================== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0f1224; /* deep navy black */
+    color: #e4e4e4;
+    line-height: 1.6;
+}
+
+/* ============================================
+   HEADER
+=============================================== */
+.site-header {
+    width: 100%;
+    background: rgba(22, 25, 50, 0.9);
+    padding: 25px 40px;
+    border-bottom: 1px solid rgba(120, 70, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.WIN2025 {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #8743ff;
+    box-shadow: 0 0 25px rgba(135, 67, 255, 0.3);
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #dcd7ff;
+    text-shadow: 0 0 10px rgba(140, 87, 255, 0.4);
+}
+
+/* ============================================
+   LAYOUT MAIN
+=============================================== */
+.main-wrap {
+    margin: 30px auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 25px;
+    padding: 0 30px;
+}
+
+/* ============================================
+   NAVIGATION (LEFT PANEL)
+=============================================== */
+.site-nav {
+    background: rgba(25, 27, 60, 0.65);
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(170, 100, 255, 0.2);
+    box-shadow: 0 0 25px rgba(90, 60, 200, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    backdrop-filter: blur(12px);
+}
+
+.site-nav a {
+    display: block;
+    text-decoration: none;
+    color: #b98bff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: 0.2s;
+    background: rgba(255,255,255,0.02);
+    font-weight: 500;
+}
+
+.site-nav a:hover {
+    background: rgba(150, 90, 255, 0.3);
+    color: #fff;
+}
+
+.site-nav a.active {
+    background: rgba(150, 60, 255, 0.5);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(150, 60, 255, 0.5);
+}
+
+.select-user {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(150,90,255,0.3);
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.select-user option {
+    background: #1a1c35;
+}
+
+/* ============================================
+   CONTENT SECTION (CENTER)
+=============================================== */
+.section-biodata {
+    background: rgba(25, 27, 60, 0.65);
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(170, 100, 255, 0.2);
+    box-shadow: 0 0 25px rgba(90, 60, 200, 0.15);
+    backdrop-filter: blur(12px);
+}
+
+.section-biodata h2 {
+    font-size: 1.9rem;
+    margin-bottom: 12px;
+    color: #dfcaff;
+    text-shadow: 0 0 10px rgba(150, 90, 255, 0.4);
+}
+
+.section-biodata p {
+    margin: 6px 0;
+    color: #dcdcdc;
+}
+
+/* Horizontal line */
+.section-biodata hr {
+    border: 0;
+    border-bottom: 1px solid rgba(180, 120, 255, 0.25);
+    margin: 12px 0;
+}
+
+/* ============================================
+   ASIDE (RIGHT PANEL)
+=============================================== */
+.aside-hobi {
+    background: rgba(25, 27, 60, 0.65);
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(170, 100, 255, 0.2);
+    box-shadow: 0 0 25px rgba(90, 60, 200, 0.15);
+    backdrop-filter: blur(12px);
+}
+
+.aside-hobi h3 {
+    color: #dfcaff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(140, 87, 255, 0.4);
+}
+
+.aside-hobi ul {
+    list-style: none;
+}
+
+.aside-hobi li {
+    background: rgba(255,255,255,0.03);
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    border: 1px solid rgba(150, 90, 255, 0.2);
+}
+
+/* ============================================
+   FOOTER (BOTTOM AREA, FULL WIDTH)
+=============================================== */
+.site-footer {
+    margin-top: 40px;
+    background: rgba(25, 27, 60, 0.65);
+    border-top: 1px solid rgba(150, 90, 255, 0.25);
+    padding: 25px;
+    text-align: center;
+    color: #d4caff;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(90, 60, 200, 0.15);
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.site-footer i {
+    color: #c0a6ff;
+}
+
+/* ============================================
+   RESPONSIVE
+=============================================== */
+@media (max-width: 1000px) {
+    .main-wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        text-align: center;
+    }
+    .header-inner {
+        flex-direction: column;
+    }
+}
